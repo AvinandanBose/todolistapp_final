@@ -1,19 +1,12 @@
-# todolistapp_updates
+# Todolistapp
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<h3><i><strong>Here can add and cross task also delete if required . Its build in mobile user interface in flutter framework using dart language</strong></i></h3>
 
 
-![Screenshot (706)](https://user-images.githubusercontent.com/38869235/170762317-cf3028f6-37f0-45ed-be33-4b48321de123.png)
+
+
+
+
+https://user-images.githubusercontent.com/38869235/171948358-a327dff5-b300-4c86-92a4-bb6c6eb1a639.mp4
+
+
