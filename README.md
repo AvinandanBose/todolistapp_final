@@ -1,6 +1,6 @@
-# Todolistapp
+# Todolist App
 
-<h3><i><strong>Here can add and cross task also delete if required . Its build in mobile user interface in flutter framework using dart language</strong></i></h3>
+<h3><i><strong>You can add any number of tasks. You can strike off the completed tasks . It's made using Flutter framework.</strong></i></h3>
 
 
 
