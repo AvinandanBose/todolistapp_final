@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todolistapp_updates/models/task_data.dart';
+
 class AddTaskScreen extends StatelessWidget {
   final Function addTaskCallback;
-  const AddTaskScreen ({Key? key, required this.addTaskCallback}) : super(key: key);
+  const AddTaskScreen({Key? key, required this.addTaskCallback})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    String newTaskTitle='';
+    String newTaskTitle = '';
     return Container(
-      color:const Color(0xff757575),
+      color: const Color(0xff757575),
       child: Container(
         padding: const EdgeInsets.all(20.0),
         decoration: const BoxDecoration(
@@ -23,31 +25,26 @@ class AddTaskScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             const Center(
-              child:  Text(
-                  'Add Text',
-                style: TextStyle(
-                  fontSize: 30.0,
-                  color:Colors.lightBlueAccent
-                ),
+              child: Text(
+                'Add a Task',
+                style: TextStyle(fontSize: 30.0, color: Colors.lightBlueAccent),
               ),
             ),
             TextField(
               autofocus: true,
               textAlign: TextAlign.center,
-              onChanged: (newValue){
+              onChanged: (newValue) {
                 newTaskTitle = newValue;
-
               },
             ),
-            FlatButton(
-              onPressed: (){
-                Provider.of<TaskData>(context, listen: false).addTask(newTaskTitle);
+            MaterialButton(
+              onPressed: () {
+                Provider.of<TaskData>(context, listen: false)
+                    .addTask(newTaskTitle);
                 Navigator.pop(context);
-
               },
               color: Colors.lightBlueAccent,
               child: const Text('Add'),
-
             ),
           ],
         ),
