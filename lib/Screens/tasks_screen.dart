@@ -16,18 +16,19 @@ class TasksScreen extends StatelessWidget {
           showModalBottomSheet(
             context: context,
             builder: (context) => SingleChildScrollView(
-                child: Container(
-              padding: EdgeInsets.only(
-                  bottom: MediaQuery.of(context).viewInsets.bottom),
-              child: AddTaskScreen(
-                addTaskCallback: (newValue) {
-                  // setState((){
-                  //   tasks.add(Task(name: newValue));
-                  // });
-                  Navigator.pop(context);
-                },
+              child: Container(
+                padding: EdgeInsets.only(
+                    bottom: MediaQuery.of(context).viewInsets.bottom),
+                child: AddTaskScreen(
+                  addTaskCallback: (newValue) {
+                    // setState((){
+                    //   tasks.add(Task(name: newValue));
+                    // });
+                    Navigator.pop(context);
+                  },
+                ),
               ),
-            )),
+            ),
             isScrollControlled: true,
           ); //return a widget
         },
@@ -35,10 +36,11 @@ class TasksScreen extends StatelessWidget {
         child: const Icon(Icons.add),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Container(
             padding: const EdgeInsets.only(
-                top: 60.0, left: 30.0, right: 30.0, bottom: 30.0),
+                top: 60.0, left: 20, right: 30.0, bottom: 30.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
